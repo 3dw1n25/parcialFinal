@@ -27,12 +27,11 @@ module.exports = mongoose.model("User", UserSchema);
 var User = require("./models/user"); // Importa modelo
 
 // Crear un nuevo usuario pasando un objeto con los valores de cada propiedad
-new User({ 
-  username: "next94",
-  first_name: "nestor",
-  last_name: "aldana",
-  email: "nestor.aldana1@gmail.com",
-  password: "true",
-  login_count: 1
+new User({
+    name: "po",
+    type: "bear",
+    clasification: "mammal",
+    legs: 4,
+    fur: "yes"
 
 }).save(); // ejecutar el método save
